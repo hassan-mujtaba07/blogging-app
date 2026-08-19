@@ -46,6 +46,7 @@ router.get('/:id', async (req,res)=>{
     })
 })
 
+
 router.post('/comment/:blogId', async (req,res)=>{
   const comment = await Comment.create({
     content: req.body.content,
